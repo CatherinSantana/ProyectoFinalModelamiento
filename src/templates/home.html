@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+<title>Técnicas de simulación</title>
+{% endblock %}
+
+{% block content %}
+<main role="main">
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-3">Bienvenidos </h1>
+      <p>En este sistema podrá diseñar diferentes situaciones o escenarios mediante diferentes métodos de simulación con
+        datos de entrada (inputs) y obtener sus efectos sobre el sistema, De esta forma, podrá comparar la evolución del
+        proceso o sistema ante diferentes situaciones.
+      </p>
+      <p><a target="_blank" class="btn btn-primary btn-lg" href="#" role="button">Caso de uso Real&raquo;</a></p>
+    </div>
+  </div>
+</main>
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{{url_for('static', filename='image/imagh.gif')}}" class="d-block w-100" alt="..." width="100%"
+        height="650px">
+    </div>
+  </div>
+</div>
+{% endblock %}
+
